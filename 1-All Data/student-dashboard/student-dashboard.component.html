@@ -1,0 +1,78 @@
+<html>
+    <head>
+        <title>Student Req Form</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <style>
+        .body{
+            background-color: rgb(255, 255, 255);
+            background-image: url('https://erp.cbit.org.in/beeserp/Images/bgimage3.png');
+            font-family: 'Open Sans', sans-serif;
+        }
+        .heading{
+            text-align: center;
+            margin-top:2%;
+        }
+        .main_container{
+            text-align: center;
+            max-width: 100%;
+            background-color: white;
+            padding: 10px 0px 10px 0px;
+            margin: 140px 500px 0px 500px;
+            margin-top:140px;
+            border-radius: 20px;
+        }
+        .feilds{
+            border: none;
+            text-align: center; 
+            width: 200px;
+            height: 27px;
+            margin: 4px;
+            border-bottom: solid;
+            border-radius: .25rem;
+        }
+        .submit_button{
+            width: 150px;
+            height: 30px;
+            background-color: #037BFE ;
+            color: white;
+            border-radius: 10px;
+            border-color: white;
+            margin-top: 20px;
+        }
+        
+    </style>
+    </head>
+    <body class="body">
+        <div class="main_container">
+            <div class="container_heading">
+              <b><h2 style="padding-bottom: 10px;">Request Form</h2></b> 
+            </div>
+            <div style="margin-bottom: 40px;">
+            <form action="">
+                <label>Enter your Name: </label>
+                <input class="feilds" type="text" name="name" placeholder="First Name" data-required="">
+                <br>
+                <br>
+                <label>Enter your Roll No. : </label>
+                <input class="feilds" type="text" name="roll" placeholder="Roll No." data-required="">
+                
+                <br>
+                <label>Enter the Reason: </label>
+                <input class="feilds" type="text" name="reason" placeholder="Reason For Gate Pass" data-required="" style="width: 300px; height: 80px;">
+                <br>
+                <br>
+                <label>Select Time: </label>
+                <input class="feilds" type="datetime-local" name="date" placeholder="Date" data-required="">
+                <br>
+                <input type="submit" name="submit" placeholder="Submit" class="submit_button">
+                
+                
+            </form>
+        </div>
+ 
+        </div>
+    
+</body>
+</html>

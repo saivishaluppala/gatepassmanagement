@@ -1,0 +1,253 @@
+<html>
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+  <title>My Dashboard</title>
+
+  <style>
+
+    body {
+      margin-top: 0;
+      margin-left: 0;
+      margin-right: 0;
+      padding: 0;
+      font-family: 'Open Sans', sans-serif;
+      background-image: url('https://assets.wallpapersin4k.org/uploads/2017/04/White-Wallpaper-Tumblr-8.png');
+      /* background-color: #ffffff; */
+    }
+    .header{
+      width: 100%;
+      height: 60px;
+
+      background-color: #013365;
+      border-bottom: solid;
+      border-color: red;
+
+    }
+    .full{
+      display: flex;
+    }
+    .menu{
+      float: left;
+      width: 180px;
+      padding-left: 30px;
+      border-radius: 20px;
+      margin-left:20px;
+      color: white;
+      background-image: url('https://i.ibb.co/Bt7jpt6/wp7335945.jpg');
+      /* background-color: rgb(52, 54, 131); */
+    }
+    .main{
+      margin-top: 30px;
+      margin-left: 50px;
+    }
+    .apporve{
+      margin-top: 30px;
+      margin-left: 100px;
+    }
+    .box1{
+      width: 300px;
+      height: 80px;
+      margin-bottom: 15px;
+      /* background-color: white; */
+      border-radius: 27px;
+      border-style: solid;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+    }
+    .box_head{
+      padding-left:10px;
+      padding-right: 10px;
+    }
+    .total{
+      padding-left:10px;
+      padding-right: 10px;
+    }
+    .pending{
+      padding-left:10px;
+      padding-right: 10px;
+
+    }
+    .apprl{
+      padding-left:10px;
+      padding-right: 10px;
+
+    }
+    .rejected{
+      padding-left:10px;
+      padding-right: 10px;
+
+    }
+    .box_accept{
+      width: 400px;
+      height: 90px;
+      margin-bottom: 15px;
+      /* background-color: white; */
+      border-radius: 27px;
+      border-style: solid;
+      display: flex;
+      border-color: #15A3B8;
+      align-items: center;
+      justify-content: space-between;
+
+    }
+    .box_accept:hover{
+      background-color: #1d67b0;
+      border-color: #1d67b0;
+      color: white;
+      box-shadow: 0 5px #1d67b0;
+      transform: translateY(4px);
+    }
+    .buton5{
+      border-radius: 30px;
+      width: 16%;
+      margin: 3%;
+      background-color: white;
+      flex-grow: 0;
+      border-color: black;
+    }
+
+
+    .buton5:active {
+      background-color: #3e8e41;
+      box-shadow: 0 5px #3e8e41;
+      transform: translateY(4px);
+    }
+    .pending_gate{
+      width: 300px;
+      height: 80px;
+      margin-bottom: 15px;
+      background-color: white;
+      border-radius: 27px;
+      border-style: solid;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+    }
+  </style>
+</head>
+<body>
+<div class="header">
+  <div style="display: flex;">
+    <h2 style="color: white;padding-left: 100px;">Gate Pass Management System</h2>
+    <span id='date-time' style="color: white;
+                padding-top: 10px;
+                /* padding-left: 100px; */
+                margin-left: 40%;
+                /* float: right; */
+                text-align: center;"></span>
+  </div>
+  <div class="full">
+    <div class="menu">
+      <h3>~~ Menu</h3>
+      <h4><a href="" style="color: white;text-decoration:none;padding-left: 25px;">~Pending</a></h4>
+      <h4><a href="" style="color: white;text-decoration:none;padding-left: 25px;">~Apporved</a></h4>
+      <h4><a href="" style="color: white;text-decoration:none;padding-left: 25px;">~Rejected</a></h4>
+      <br>
+      <h3>~~ Gate</h3>
+      <h4><a href="" style="color: white;text-decoration:none;padding-left: 25px;">~Pending</a></h4>
+      <h4><a href="" style="color: white;text-decoration:none;padding-left: 25px;">~Apporved</a></h4>
+      <br>
+      <h3>~~ Logout</h3>
+    </div>
+    <div class="main">
+      <h2>My Dashboard</h2>
+      <div class="box1" style="border-color: #037BFE ;box-shadow: 2px 3px #037BFE; color: #037BFE;">
+        <h3 class="box_head">Total Requests</h3>
+        <h2 class="total" >2</h2>
+      </div>
+      <div class="box1" style="border-color: #FFC106 ;box-shadow: 2px 3px #FFC106; color: #FFC106;">
+        <h3 class="box_head">Pending</h3>
+        <h2 class="pending">8</h2>
+      </div>
+      <div class="box1" style="border-color: #28A744 ;box-shadow: 2px 3px #28A744; color: #28A744;">
+        <h3 class="box_head">Apporved</h3>
+        <h2 class="apprl">1</h2>
+      </div>
+      <div class="box1" style="border-color: #DD3444 ;box-shadow: 2px 3px #DD3444; color: #DD3444;">
+        <h3 class="box_head">Rejected</h3>
+        <h2 class="rejected">7</h2>
+      </div>
+    </div>
+
+
+    <div class="apporve">
+      <h1>Easy Apporve</h1>
+
+      <div class="box_accept">
+        <button class="buton5"><img src="https://i.ibb.co/4SMGc0Z/1000-F-143006118-Ezv-Mq-M45pk-V2-EDAIBp9-Gkt7d-YPi-VDwi-I.jpg" style="border-radius: 100%;width: 100%;height: 100%;"></button>
+
+        <div>
+          <a><em>Name: </em> Mahesh Kumar</a><br>
+          <a><em>Roll No: </em> 160120733034</a><br>
+          <a><em>Reason: </em>Health</a><br>
+          <a><em>Mentor Status--> </em> <b style="color:green">Apporved</b></a>
+        </div>
+
+        <button class="buton5"><img src="https://i.ibb.co/YQ69zYw/green-check-mark-icon-in-a-circle-free-vector.jpg" style="border-radius: 100%;width: 100%;height: 100%; "></button>
+      </div>
+
+
+
+      <div class="box_accept" id="2" >
+        <button class="buton5" ><img src="https://i.ibb.co/4SMGc0Z/1000-F-143006118-Ezv-Mq-M45pk-V2-EDAIBp9-Gkt7d-YPi-VDwi-I.jpg" style="border-radius: 100%;width: 100%;height: 100%;"></button>
+
+        <div>
+          <a><em>Name: </em>Raghu Buchala</a><br>
+          <a><em>Roll No: </em> 160120733040</a><br>
+          <a><em>Reason: </em>Function</a><br>
+          <a><em>Mentor Status--> </em> <b style="color: #FFC106">Pending</b></a>
+        </div>
+        <button class="buton5"><img src="https://i.ibb.co/YQ69zYw/green-check-mark-icon-in-a-circle-free-vector.jpg" style="border-radius: 100%;width: 100%;height: 100%; "></button>
+      </div>
+      <div class="box_accept">
+        <button class="buton5"><img src="https://i.ibb.co/4SMGc0Z/1000-F-143006118-Ezv-Mq-M45pk-V2-EDAIBp9-Gkt7d-YPi-VDwi-I.jpg" style="border-radius: 100%;width: 100%;height: 100%;"></button>
+        <div>
+          <a><em>Name: </em>Siddartha Kattungur</a><br>
+          <a><em>Roll No: </em> 160120733053</a><br>
+          <a><em>Reason: </em>Ocean Park</a><br>
+          <a><em>Mentor Status--> </em> <b style="color:red">Rejected</b></a>
+        </div>
+
+        <button class="buton5"><img src="https://i.ibb.co/YQ69zYw/green-check-mark-icon-in-a-circle-free-vector.jpg" style="border-radius: 100%;width: 100%;height: 100%; "></button>
+      </div>
+    </div>
+
+    <div class="main">
+      <h2>Gate Status</h2>
+      <div class="pending_gate" style="border-color: Red ;box-shadow: 2px 3px red; color: red;">
+        <h3 class="box_head">Pending @Gate</h3>
+        <h2 class="box_head" >2</h2>
+      </div>
+      <div class="box1" style="border-color: green ;box-shadow: 2px 3px green; color:green;">
+        <h3 class="box_head" >Apporved @Gate</h3>
+        <h2 class="box_head" id="apporved_gate">8</h2>
+      </div>
+
+    </div>
+
+
+
+
+
+  </div>
+  <script>
+    var dt = new Date();
+    document.getElementById('date-time').innerHTML=dt;
+
+    var x = document.getElementById('apporved_gate').innerHTML;
+    function appr1(){
+      alert(x);
+    }
+
+    // $(".box_accept").remove();
+
+
+  </script>
+</div>
+</body>
+</html>

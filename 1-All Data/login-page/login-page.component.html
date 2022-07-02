@@ -1,0 +1,94 @@
+
+<head>
+  <title>Gate Pass</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+  <style>
+    .body{
+  background-color: rgb(255, 255, 255);
+  background-image: url('https://erp.cbit.org.in/beeserp/Images/bgimage3.png');
+  font-family: 'Open Sans', sans-serif;
+}
+.heading{
+  text-align: center;
+  margin-top:5px;
+}
+.main_container{
+  text-align: center;
+  background-color: white;
+  padding: 20px 0px 0px 0px;
+  margin: 0px 300px 0px 300px;
+  margin-top:140px;
+  border-radius: 20px;
+}
+.container_main{
+  display: flex;
+}
+
+.student_box{
+  padding-left: 100px;
+  padding-right: 100px;
+  border-right-style: solid;
+  border-color: #DEE2E6;
+}
+.stu_button{
+  border-radius:100% ;
+  width: 200px;
+  height: 200px;
+  border:solid;
+  background-color: white;
+}
+.login_box{
+  padding-left:100px
+}
+.input_box{
+  width: 200px;
+  height: 40px;
+  border-radius: .25rem;
+  border-color: #DEE2E6;
+  border: none;
+  border-bottom: solid;
+
+}
+.submit_button{
+  width: 150px;
+  height: 30px;
+  background-color: #037BFE ;
+  color: white;
+  border-radius: 10px;
+}
+
+  </style>
+</head>
+
+<body class="body">
+<div class="main_container">
+  <div class="container_heading">
+    <h1 style="padding-bottom: 10px;">Gate Pass Management System</h1>
+  </div>
+  <div class="container_main">
+    <div class="student_box">
+      <img src="https://i.ibb.co/mTfbSXC/3750011.png" alt="student-clip-art" style= "border-radius:100%; width: 185px;
+                        height: 194px;" >
+      <b><h4>Student Gate Pass Request Form</h4></b>
+    </div>
+
+    <div class="login_box">
+      <div><h3>College Login</h3></div>
+      <div>
+        <form>
+
+          <input type="text" name="username" placeholder="Username" class="input_box" id="username" required>
+          <br>
+          <input type="text" name="pwd" placeholder="Password" class="input_box" id="password" style="margin-top: 10px;" required>
+          <br><br>
+          <button type="submit" routerLink="student-dashboard" routerLinkActive="active" name="submit" class="submit_button" (click)="validate()">Submit</button>
+        </form>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>

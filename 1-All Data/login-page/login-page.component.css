@@ -1,0 +1,53 @@
+.body{
+  background-color: rgb(255, 255, 255);
+  background-image: url('https://erp.cbit.org.in/beeserp/Images/bgimage3.png');
+  font-family: 'Open Sans', sans-serif;
+}
+.heading{
+  text-align: center;
+  margin-top:5px;
+}
+.main_container{
+  text-align: center;
+  background-color: white;
+  padding: 20px 0px 0px 0px;
+  margin: 0px 300px 0px 300px;
+  margin-top:140px;
+  border-radius: 20px;
+}
+.container_main{
+  display: flex;
+}
+
+.student_box{
+  padding-left: 100px;
+  padding-right: 100px;
+  border-right-style: solid;
+  border-color: #DEE2E6;
+}
+.stu_button{
+  border-radius:100% ;
+  width: 200px;
+  height: 200px;
+  border:solid;
+  background-color: white;
+}
+.login_box{
+  padding-left:100px
+}
+.input_box{
+  width: 200px;
+  height: 40px;
+  border-radius: .25rem;
+  border-color: #DEE2E6;
+  border: none;
+  border-bottom: solid;
+
+}
+.submit_button{
+  width: 150px;
+  height: 30px;
+  background-color: #037BFE ;
+  color: white;
+  border-radius: 10px;
+}
